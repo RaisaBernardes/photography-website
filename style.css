@@ -123,8 +123,11 @@ header {
 /* end of mission */
 
 /* collection */
+.section{
+    background: #080C0C;
+}
 .card-shadow{
-    box-shadow: 5px 8px 20px #444;
+    box-shadow: 5px 8px 20px #000;
 }
 .heading{
     position: absolute;
@@ -180,7 +183,6 @@ header {
 .price-card-button{
     background: #22ADBB;
     width: 180px;
-    border-radius: 25px;
     box-shadow: 5px 8px 18px #000;
     transition: all .2s;
     font-size: 12px;
@@ -233,3 +235,53 @@ header {
     }
 }
 /* end of pricing */
+
+/* contact */
+.contact{
+    background: linear-gradient(105deg,
+    rgba(21,31,32,1)0%,
+    rgba(21,31,32, .95) 50%,
+    transparent 50%),
+    url(images/form-img.jpeg) no-repeat center center /cover;
+}
+.input{
+    border-color: transparent;
+    border-radius: 0;
+    transition: all .8s;
+}
+.input:focus{
+    box-shadow: none;
+    color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+.submit-button{
+    background: #22ADBB;
+    color: #eee;
+}
+.submit-button:hover{
+    background: #1C96A2;
+    color: #eee;
+}
+/* .label{
+    color: #777;
+    display: block;
+    margin-top: -70px;
+    margin-left: 4px;
+    font-size: 13px;
+}
+.input:placeholder-shown + .label{
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+} */
+
+@media (max-width:992px){
+    .contact{
+        background: linear-gradient(rgba(21, 31, 32, 1), rgba(21, 31, 32, .95));
+    }
+    .contact-form{
+        width: 80%;
+        margin: auto;
+    }
+}
+/* end of contact */
