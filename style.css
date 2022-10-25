@@ -91,6 +91,9 @@ header {
     border: 3px solid #eee;
     margin: auto;
 }
+.iconMission{
+    color: #22ADBB;
+}   
 .fromLeft{
     animation-name: fromLeft;
     animation-duration: 3s;
@@ -257,24 +260,15 @@ header {
 .submit-button{
     background: #22ADBB;
     color: #eee;
+    font-size: 13px;
 }
 .submit-button:hover{
     background: #1C96A2;
     color: #eee;
 }
-/* .label{
-    color: #777;
-    display: block;
-    margin-top: -70px;
-    margin-left: 4px;
-    font-size: 13px;
+.label{
+    display: none;
 }
-.input:placeholder-shown + .label{
-    transform: translate(20px, 20px);
-    opacity: 0;
-    visibility: hidden;
-} */
-
 @media (max-width:992px){
     .contact{
         background: linear-gradient(rgba(21, 31, 32, 1), rgba(21, 31, 32, .95));
